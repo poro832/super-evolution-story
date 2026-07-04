@@ -389,8 +389,13 @@ details.deck[open] summary.deck-head { border-bottom: 1px solid var(--line); }
   display: flex; flex-direction: column; transition: transform .15s, border-color .15s;
 }
 .sinsaeng-card:hover { transform: translateY(-4px); border-color: var(--amber); }
-.sinsaeng-card img {
-  width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: #efe6cf;
+.sinsaeng-card img,
+.sinsaeng-card .card-noimg {
+  width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: #2a1d14;
+}
+.sinsaeng-card .card-noimg {
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-mut); font-weight: 800; font-size: 1.1rem; border-bottom: 1px solid var(--line);
 }
 .sinsaeng-card .nm { padding: 8px 6px 4px; font-weight: 800; font-size: .98rem; }
 .sinsaeng-card .badges {
@@ -410,8 +415,8 @@ dialog.sinsaeng-modal::backdrop { background: rgba(0,0,0,.62); backdrop-filter: 
   background: linear-gradient(90deg, var(--panel-2), transparent);
 }
 .modal-head img {
-  width: 62px; height: 62px; object-fit: cover; border-radius: var(--radius-sm);
-  border: 1px solid var(--line); flex: none; background: #efe6cf;
+  width: 104px; height: 64px; object-fit: cover; border-radius: var(--radius-sm);
+  border: 1px solid var(--line); flex: none; background: #2a1d14;
 }
 .modal-head h3 { margin: 0; font-family: var(--head); font-weight: 800; font-size: 1.4rem; }
 .modal-head .sub { color: var(--ink-mut); font-size: .85rem; }
