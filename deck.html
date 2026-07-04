@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>덱 공략 — 슈퍼 진화 스토리</title>
+  <meta name="description" content="슈퍼 진화 스토리 현역 덱 공략. 슾카덱·희전+탱커덱·오스덱·제로덱·디바인덱 등 PVP/PVE 현역 덱 구성과 운용, 덱 진로까지.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">슈퍼 진화 스토리 <span>공략</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">홈</a>
+        <a href="tips.html">종합 공략</a>
+        <a href="deck.html" aria-current="page">덱 공략</a>
+        <a href="sinsaeng.html">신생</a>
+        <a href="guide.html">입문 가이드</a>
+        <a href="guardian.html">수호신</a>
+        <a href="rune-gene.html">룬·유전자</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="kicker">Deck Guide</span>
+      <h1>덱 공략</h1>
+      <p class="lead">PVE는 과거와 크게 다르지 않지만, PVP는 <b>희전완포의 등장</b>으로
+        스팅덱·망염덱·뫼비덱·견고 기반 미는덱 대부분이 현역에서 밀려났습니다.
+        아래는 <b>현재 현역으로 활동하는 덱</b>들 — 목표로 삼거나 참고하세요.</p>
+      <nav class="toc">
+        <a href="#read">읽기 전에</a>
+        <a href="#tier">티어덱</a>
+        <a href="#content-deck">컨텐츠별 덱</a>
+        <a href="#path">덱 진로</a>
+      </nav>
+    </div>
+
+    <!-- ===== 읽기 전에 ===== -->
+    <section class="block" id="read">
+      <h2>※ 읽기 전에 꼭 봐주세요 ※</h2>
+
+      <div class="panel">
+        <p style="margin-top:0;"><b>글 구성</b> — 각 덱은 다음 순서로 정리했습니다.</p>
+        <p style="margin:0;">[덱 이름] · 존버덱/미는덱 → ① 덱 설명 → ② 덱 구성(사용 수호신) → ③ 구성 설명 → ④ 추천 신생</p>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>덱 유형</th><th>정의</th></tr></thead>
+          <tbody>
+            <tr><td><span class="deck-type survive">존버덱</span></td><td>투혼까지 안 죽고 버티는 덱</td></tr>
+            <tr><td><span class="deck-type push">미는덱</span></td><td>적을 맵 끝까지 밀어서 죽이는 덱</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>신생 약어표</h3>
+      <p>덱 구성은 신생 이름을 <b>한 글자</b>로 줄여 적었습니다.</p>
+      <div class="abbr-grid">
+        <div class="abbr"><span class="ab">슾</span> 스퍼</div>
+        <div class="abbr"><span class="ab">카</span> 카라</div>
+        <div class="abbr"><span class="ab">뫼</span> 뫼비우스</div>
+        <div class="abbr"><span class="ab">솔</span> 솔라</div>
+        <div class="abbr"><span class="ab">오</span> 오페라</div>
+        <div class="abbr"><span class="ab">슼</span> 스크림</div>
+        <div class="abbr"><span class="ab">난</span> 나인테일</div>
+        <div class="abbr"><span class="ab">안</span> 안타레스</div>
+        <div class="abbr"><span class="ab">슽</span> 스팅</div>
+        <div class="abbr"><span class="ab">배</span> 배리어</div>
+        <div class="abbr"><span class="ab">콩</span> 아이가스</div>
+        <div class="abbr"><span class="ab">아</span> 아로히로이</div>
+        <div class="abbr"><span class="ab">케</span> 케이론</div>
+        <div class="abbr"><span class="ab">희</span> 희전완포</div>
+        <div class="abbr"><span class="ab">제</span> 제로</div>
+        <div class="abbr"><span class="ab">디</span> 디바인</div>
+        <div class="abbr"><span class="ab">프</span> 프시케</div>
+        <div class="abbr"><span class="ab">망</span> 망염</div>
+        <div class="abbr"><span class="ab">소</span> 소이</div>
+        <div class="abbr"><span class="ab">루</span> 루나</div>
+      </div>
+      <p class="note tip"><b>표기.</b> 덱 구성이 <b>A(B)</b>로 적힌 경우 A를 많이 쓰지만 B도 사용 가능하다는 뜻입니다.</p>
+    </section>
+
+    <!-- ===== 티어덱 ===== -->
+    <section class="block" id="tier">
+      <h2>티어덱</h2>
+
+      <!-- 슾카덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>슾카덱</h3><span class="deck-type survive">존버덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>스퍼의 압도적인 탱킹과 <b>최대 체력 비례 %딜</b>로 딜링하는 덱. <b>PVE 최강 사기덱</b>입니다.
+          PVP에서는 하드카운터 망염 때문에 나락을 갔었지만, 희전완포 등장으로 망염이 안 쓰이기 시작하면서
+          희전완포 상대로 약한 뫼비우스를 빼고, 희전덱의 카운터인 나인테일을 채용해
+          <b>희전완포 + 탱커덱 상대로 좋은 모습</b>을 보입니다.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_seupka.png" alt="슾카덱 구성 슾카뫼반솔" loading="lazy">
+          <figcaption><span class="code">슾카뫼반솔</span> <span class="gd">· 수호신 주작</span></figcaption>
+        </figure>
+        <p>스퍼·카라·솔라를 고정하고 뒤에 원딜을 배치합니다. 스퍼를 쓸 때 가장 많이 쓰게 될 덱으로,
+          스테이지 적 구성에 따라 변형되며 PVP에서 고스팩 상대도 이기는 모습을 보여줍니다.</p>
+        <div class="deck-alt">
+          <span class="lab">변형:</span> <code>슾카반솔난</code>
+          <span class="gd">기린 / 백호 / 주작</span> — 희전완포 + 탱커 조합을 카운터.
+          단 스퍼 체형을 크게 키워 나인테일 1스킬 같은 범위공격에서 후방 아군을 보호하는 것이 강제되고,
+          다른 덱에 약해 <b>뉴비에겐 비추천</b>.
+        </div>
+        <p class="fixed">※ 스퍼 · 카라 · 반 · 솔라 고정</p>
+        <p class="rec"><b>추천 신생</b> — 뫼비우스, 나인테일, 사룡, 안타레스, @</p>
+      </div>
+      </details>
+
+      <!-- 희전 + 탱커덱 카테고리 -->
+      <h3 style="margin-top:34px;">[희전 + 탱커덱]</h3>
+      <p>현재 <b>메타를 지배 중인 조합</b>입니다. 오페라의 자리를 위협하던 망염을 메타에서 밀어낸 장본인이며,
+        <b>PVP 최강 폼 / PVE 약세</b>. 아래에 세부 덱들을 정리했습니다.</p>
+
+      <!-- 콩희덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>콩희덱</h3><span class="deck-type survive">존버덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <figure class="deck-img">
+          <img src="assets/img/deck_konghui.png" alt="콩희덱 구성 콩카슾희난" loading="lazy">
+          <figcaption><span class="code">콩카슾희난</span> <span class="gd">· 수호신 주작 / 백호 / 기린 / 청룡</span></figcaption>
+        </figure>
+        <p>탱킹 능력이 최상급인 아이가스에 희전·카라를 기생시킨 덱. 희전덱 중 유일하게
+          <b>PVE에서도 좋은 모습</b>(단, 후반 해협은 별로)을 보입니다. 주의할 점은 카라의 회오리보다
+          아이가스의 이속이 빠르면 상대 원딜에게 아이가스가 녹을 수 있다는 점, 그리고 아이가스 4스킬 탓에
+          <b>오스덱에 약합니다</b>. 위 구성이 거의 완벽에 가까워 추천합니다.</p>
+        <p class="fixed">※ 아이가스 · 카라 · 희전완포 고정 / 스퍼 채용 추천</p>
+        <p class="rec"><b>추천 신생</b> — 미드나이트, 사룡, 나인테일, 반, 안타레스</p>
+      </div>
+      </details>
+
+      <!-- 아희덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>아희덱</h3><span class="deck-type survive">존버덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <figure class="deck-img">
+          <img src="assets/img/deck_ahui.png" alt="아희덱 구성 아슾희난솔" loading="lazy">
+          <figcaption><span class="code">아슾희난솔</span> <span class="gd">· 수호신 주작 / 기린 / 청룡</span></figcaption>
+        </figure>
+        <p>희전덱 중 <b>PVP에서 가장 좋은 덱</b>. 아로히로이의 순수 탱킹이 매우 뛰어나 조합도 다양합니다.
+          미러전에서는 반·사룡을 채용하는 쪽이 더 좋습니다.</p>
+        <div class="deck-alt">
+          <span class="lab">다른 구성:</span>
+          <code>아슾희반솔</code><code>아카슾희솔</code><code>아카반사난</code><code>아콩슾희난</code>
+        </div>
+        <p>스팩이 안 좋다면 <b>솔라 채용</b>을 추천합니다.</p>
+        <p class="fixed">※ 아로히로이 · 희전완포 고정</p>
+        <p class="rec"><b>추천 신생</b> — 스퍼, 나인테일, 솔라, 사룡, 반, 카라, 미드나이트, 아이가스, @</p>
+      </div>
+      </details>
+
+      <!-- 케론덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>케론덱</h3><span class="deck-type survive">존버덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <figure class="deck-img">
+          <img src="assets/img/deck_keron.png" alt="케론덱 구성 케카희반솔" loading="lazy">
+          <figcaption><span class="code">케카희반솔</span> <span class="gd">· 수호신 주작 / 기린 / 청룡</span></figcaption>
+        </figure>
+        <p>희전덱 중 성능은 가장 안 좋다고 평가받지만, <b>희전만 있다면 가장 만들기 쉬운</b> 장점이 있습니다.
+          스킬 봉인을 막는 반, 힐러 겸 딜러 솔라, 케이론의 체급을 올려줄 카라가 모두 중요해
+          위 구성을 거의 고정으로 사용합니다.</p>
+        <p class="note">PVE에서는 희전 대신 <b>뫼비</b>를 채용합니다.</p>
+      </div>
+      </details>
+
+      <!-- 오스덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>오스덱</h3><span class="deck-type push">미는덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>모든 덱 상대로 이길 수도 질 수도 있는 덱. 이 게임에서 <b>가장 오래 메타 상위권에 군림</b> 중입니다.
+          못 이기던 덱도 희전완포를 채용해 이기며, 현재 메타를 지배하는 <b>희전 + 탱커 조합을 카운터치기 가장 좋은 덱</b>입니다.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_oseu.png" alt="오스덱 구성 슼오희반난" loading="lazy">
+          <figcaption><span class="code">슼오희반난</span> <span class="gd">· 수호신 청룡 / 기린 / 백호</span></figcaption>
+        </figure>
+        <p>오페라·스크림을 고정하고 뒤에 원딜을 배치합니다. 현재 메타 최다 사용 조합이고 구성이 가장 자유로워,
+          희전 + 탱커 조합을 녹이는 데 최적화돼 있습니다. 카라를 쓰는 덱 상대로는 나인테일을 앞에 배치해
+          회오리 타이밍을 엇나가게 만듭니다. 미러전에서는 안타·스퍼를 채용한 덱이 좋습니다(예: <code>슼오슾반안</code>).</p>
+        <div class="deck-alt">
+          <span class="lab">다른 구성:</span>
+          <code>슼오슾반안(난)</code><code>슼오슽반안(난)</code><code>슼오배반안(난)</code><code>슼오아안난</code>
+        </div>
+        <p class="fixed">※ 오페라 · 스크림 고정</p>
+        <p class="rec"><b>추천 신생</b> — 희전완포, 스퍼, 반, 안타레스, 사룡, 나인테일, 스팅, 베리어, 아로히로이, @</p>
+        <p class="note tip"><b>질문 많은 부분.</b> 스크림은 빨리 죽어서 오페라에게 버프를 주는 역할입니다 — <b>빨리 죽는 게 정상</b>이에요.</p>
+      </div>
+      </details>
+
+      <!-- 제로덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>제로덱</h3><span class="deck-type push">미는덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>압도적인 DPS로 상대를 녹이는 덱. 희전완포 등장으로 PVP에서는 밀려났지만,
+          <b>오스덱을 잘 잡고 후반 스테이지를 밀기 위해 필수</b>로 만들어야 합니다.
+          단, <b>견고룬 단계가 매우 중요</b>해 뉴비에겐 비추천.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_zero.png" alt="제로덱 구성 배제슼(카)슽안" loading="lazy">
+          <figcaption><span class="code">배제슼(카)슽안</span> <span class="gd">· 수호신 청룡</span></figcaption>
+        </figure>
+        <p>제로의 스킬을 활용해 상대를 벽까지 밀기 위해 근접 4마리 이상을 채용하고, 범위 공격이 있는 원딜을 배치합니다.
+          제로가 초반에 녹는 것을 막아줄 배리어·스팅, 제로의 체급을 올려줄 스크림이나 카라를 채용합니다.
+          스크림·카라 대신 울티머스·브루엘을 넣기도 합니다.</p>
+        <p class="fixed">※ 배리어 · 제로 · 스팅 · @(근접) 고정</p>
+        <p class="rec"><b>추천 신생</b> — 안타레스, 나인테일, 카르마, 브루엘, 울티머스</p>
+      </div>
+      </details>
+
+      <!-- 망루덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>망루덱</h3><span class="deck-type push">미는덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>이 글에 넣을지 가장 고민한 덱. 한 문장으로 요약하면 <i>"희전완포 나오기 전의 범부"</i>.
+          슾카덱을 굉장히 잘 잡고, 희전덱 중 아희덱과는 비비지만 나머지 희전덱(특히 콩희, 오스+희전)은 못 이깁니다.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_mangru.png" alt="망루덱 구성 망슼슽루안(난)" loading="lazy">
+          <figcaption><span class="code">망슼슽루안(난)</span> <span class="gd">· 수호신 주작 / 청룡 / 기린</span></figcaption>
+        </figure>
+        <p>스크림 버프가 있을 때 최대한 이득을 봐야 하므로 <b>스크림·망염의 스팩이 매우 중요</b>합니다.
+          스크림 대신 카라를 채용하기도 하지만, 희전완포의 존재 때문에 스크림이 더 좋습니다.</p>
+        <p class="fixed">※ 망염 맨 앞 고정 · 루나 고정</p>
+        <p class="rec"><b>추천 신생</b> — 희전완포, 스팅, 안타, 반(루나 채용 시 X), 스크림, 카라, 나인테일, 프시케, 사룡</p>
+      </div>
+      </details>
+
+      <!-- 디바인덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>디바인덱</h3><span class="deck-type util">범용</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>슾카덱 다음으로 <b>스테이지 밀기 좋은 덱</b>. 버프 제거가 있는 반이 하드카운터라 PVP에서는 안 좋지만,
+          반이 없는 스테이지에서 활약합니다.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_divine.png" alt="디바인덱 구성 디카뫼프솔" loading="lazy">
+          <figcaption><span class="code">디카뫼프솔</span></figcaption>
+        </figure>
+        <p>디바인은 수호신을 쓰면 버프가 생기며 점점 강해지는 스킬을 가졌습니다. 수호신마다 버프가 다르며
+          (기린은 상대에게 디버프), 이런 특성 때문에 디바인을 필두로 <b>디바인이 약한 타이밍을 보호해줄
+          친구들</b>로 구성합니다.</p>
+        <p class="note"><b>수호신 사용 순서:</b> 현무 → 기린 → 청룡 → 주작 → 백호</p>
+        <p class="fixed">※ 디바인 고정</p>
+        <p class="rec"><b>추천 신생</b> — 카라, 스크림, 프시케, 스팅, 뫼비우스, 솔라, 루나, 희전완포, 나인테일, 안타레스</p>
+      </div>
+      </details>
+
+      <!-- 무도덱 -->
+      <details class="deck">
+        <summary class="deck-head"><h3>무도덱</h3><span class="deck-type util">무한도전 · 극한폭주</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>말 그대로 <b>무한도전·극한폭주에서만</b> 사용하는 덱. 소이 / 희전완포 중 무엇을 채용하느냐에 따라
+          덱이 달라집니다. 둘 중 더 좋은 건 <b>종결 기준 소이</b>입니다.</p>
+        <div class="note warn">안타가 들어가면 안타의 스택이 쌓일 때 <b>폭주가 적용 안 되는 버그</b>가 있어,
+          <b>카라를 맨 앞에 두는 것을 고정</b>으로 합니다.</div>
+        <figure class="deck-img">
+          <img src="assets/img/deck_mudo_hui.png" alt="무도덱 희전완포 사용 구성 카안난솔오" loading="lazy">
+          <figcaption><span class="code">카안난솔오</span> <span class="gd">· 희전완포 사용 · 지원: 희전완포 &gt; 스퍼</span></figcaption>
+        </figure>
+        <figure class="deck-img">
+          <img src="assets/img/deck_mudo_soi.png" alt="무도덱 소이 사용 구성 카안난솔소" loading="lazy">
+          <figcaption><span class="code">카안난솔소</span> <span class="gd">· 소이 사용 · 지원: 오페라 &gt; 스퍼</span></figcaption>
+        </figure>
+      </div>
+      </details>
+    </section>
+
+    <!-- ===== 컨텐츠별 덱 ===== -->
+    <section class="block" id="content-deck">
+      <h2>컨텐츠별 덱</h2>
+
+      <h3>운명의 문 · 정글</h3>
+      <p>보통 <b>존버덱</b>을 많이 씁니다. 작성자의 경우 <b>아희덱에 카라를 넣어</b> 사용합니다.</p>
+
+      <h3>부족 던전</h3>
+      <p>부족 몬스터는 디바인을 조금만 키워도 <b>디바인덱</b>으로 쉽게 밀 수 있지만, <b>처결이 빡셉니다.</b>
+        처결은 종결급 스팩이면 디바인으로 간단히 밀고, 그 정도가 아니라면 보통 오페라 지원을 받아
+        <code>오오슼솔안</code>으로 유니라한을 스봉(스킬 봉인)해 잡습니다.</p>
+
+      <h3>원시 몬스터</h3>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>덱</th><th>사용 상황</th></tr></thead>
+          <tbody>
+            <tr><td><b>디바인덱</b></td><td>원거리만 남았거나 원시 단계가 낮을 때. 스팩 좋고 상대 버프가 잘 뜨면 밀기 가능.</td></tr>
+            <tr><td><b>오스덱</b></td><td>단계가 높아질수록 쓰기 힘들지만, 딜을 우겨넣을 수 있는 몇 안 되는 방법.</td></tr>
+            <tr><td><b>망염덱</b></td><td>망염 스킬로 지속 딜. 망염을 지원받아 2마리로, 원거리만 남았을 때 원거리를 녹이는 역할.</td></tr>
+            <tr><td><b>제로덱</b></td><td>원시 몬스터가 근접 4마리일 때 성능이 가장 좋음.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <details class="deck">
+        <summary class="deck-head"><h3>쌍스팅덱</h3><span class="deck-type push">원시 미는덱</span><span class="deck-chev">›</span></summary>
+        <div class="deck-body">
+        <p>원시를 가장 잘 미는 덱. 근접만 녹일 수 있어, 한 번에 밀기 불가능한 <b>높은 단계 원시(보통 원시 3 이상)</b>에서
+          사용합니다. <b>스크림과 스팅만 있으면</b> 사용 가능합니다.</p>
+        <figure class="deck-img">
+          <img src="assets/img/deck_ssangsting.png" alt="쌍스팅덱 구성 카솔슼슽슽" loading="lazy">
+          <figcaption><span class="code">카솔슼슽슽</span></figcaption>
+        </figure>
+        <p>맨 앞에 자폭용 카라를 배치하고 스크림·솔라의 폭주를 터트린 뒤, 최후방의 스팅에
+          <b>폭주 스크림 + 폭주 솔라 버프</b>를 입혀 반사딜로 녹이는 덱입니다. 수호신 계약 만렙이면
+          현무 → 주작, 만렙이 아니라면 타이밍 맞춰 주작을 쓰면 됩니다.
+          고스팩이라 카라가 소중하면 카라 대신 <b>부쉬에 신속룬</b>을 달아 폭주를 터트립니다.</p>
+      </div>
+      </details>
+    </section>
+
+    <!-- ===== 덱 진로 ===== -->
+    <section class="block" id="path">
+      <h2>덱 진로</h2>
+      <p>덱 육성 순서에 대한 조언입니다.</p>
+      <div class="panel">
+        <ol style="margin:0; padding-left:20px;">
+          <li><b>태초를 1순위</b>로 키웁니다.</li>
+          <li><b>[오스덱] 완성을 1순위 목표</b>로. 쉽게 구하는 신생으로 구성(예: <code>슼오반소난</code>)을 계속 만듭니다.</li>
+          <li>행운 수정으로 <b>스퍼</b>를 뽑았다면 <b>[슾카덱]</b>을 만들어 스테이지·정글·운명의 문·채굴장을 쭉 밉니다.</li>
+          <li>이전 [오스덱]을 <code>오스슾반난</code> 구성으로 바꿔 <b>슾카덱과 오스덱을 병행</b> 육성합니다.</li>
+          <li>스퍼를 얻었으니 <b>안타레스</b>를 뽑아 <b>[무도덱]</b>을 맞춥니다.</li>
+          <li>그 뒤 <b>희전완포</b>를 뽑아 키웁니다.</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="note" style="margin-top:36px;">
+      <b>출처.</b> 슈진스 커뮤니티 덱 공략을 개인 취미용 팬 공략으로 재구성했습니다.
+      메타와 덱 평가는 작성 시점 기준이며 패치에 따라 달라질 수 있습니다.
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>슈퍼 진화 스토리 비공식 팬 공략 · 개인 취미용</span>
+      <span>자료 참고: 슈진스 네이버 카페 · 나무위키 「슈퍼 진화 스토리」</span>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

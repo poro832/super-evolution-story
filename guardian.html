@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수호신 가이드 — 슈퍼 진화 스토리 공략</title>
+  <meta name="description" content="슈퍼 진화 스토리 수호신 완전 정리. 주작·백호·현무·청룡·기린 5종의 등급별 효과와 수호신 계약, 운용 팁.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">슈퍼 진화 스토리 <span>공략</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">홈</a>
+        <a href="tips.html">종합 공략</a>
+        <a href="deck.html">덱 공략</a>
+        <a href="sinsaeng.html">신생</a>
+        <a href="guide.html">입문 가이드</a>
+        <a href="guardian.html" aria-current="page">수호신</a>
+        <a href="rune-gene.html">룬·유전자</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="kicker">Guardian</span>
+      <h1>수호신 가이드</h1>
+      <p class="lead">전투 중 직접 발동할 수 있는 유일한 조작 요소. 타이밍 하나로 승패가 갈리는,
+        슈진스의 진짜 '컨트롤'입니다.</p>
+      <nav class="toc">
+        <a href="#basic">작동 원리</a>
+        <a href="#jujak">주작</a>
+        <a href="#baekho">백호</a>
+        <a href="#hyeonmu">현무</a>
+        <a href="#cheongryong">청룡</a>
+        <a href="#girin">기린</a>
+        <a href="#contract">수호신 계약</a>
+      </nav>
+    </div>
+
+    <section class="block" id="basic">
+      <h2>작동 원리</h2>
+      <p>
+        수호신은 모두 <b>5종</b>(주작 · 백호 · 현무 · 청룡 · 기린). 각각 <b>패시브 효과</b>를 가지며,
+        발동 시 <b>액티브 효과</b>로 추가 능력을 냅니다. 액티브는 게이지를 소모하는데,
+        최초 1칸 → 발동할 때마다 1칸씩 늘어 <b>최대 3칸</b>까지 증가합니다. 액티브 후
+        약 <b>3초의 글로벌 쿨타임</b>이 있고, 패시브는 다른 수호신을 쓰기 전까지 유지됩니다.
+      </p>
+
+      <figure class="shot">
+        <img src="assets/img/guardians_bar.webp" alt="5종 수호신 카드와 에너지 게이지">
+        <figcaption>왼쪽부터 주작 · 백호 · 현무 · 청룡 · 기린. 좌측 바가 에너지 게이지.</figcaption>
+      </figure>
+
+      <ul>
+        <li>수호신은 캐릭터 레벨업마다 <b>순서대로 개방</b>되고, 1급을 올릴 때마다 <b>신성포자</b>를 소모합니다.</li>
+        <li>각 수호신은 <b>2 · 4 · 6 · 8 · 10급</b>에서 효과가 강화됩니다.</li>
+        <li>올린 수호신 레벨은 <b>300젬</b>으로 초기화해 자원을 돌려받을 수 있습니다.</li>
+        <li>자동 플레이 시 설정한 수호신이 조건 충족마다 자동 사용됩니다.
+            단 <b>주작은 예외</b>로, 체력이 일정 % 이하로 떨어질 때 발동합니다.</li>
+      </ul>
+    </section>
+
+    <!-- 주작 -->
+    <section class="block" id="jujak">
+      <div class="guardian">
+        <div class="guardian-head">
+          <img src="assets/img/guardian_jujak.webp" alt="수호신 주작">
+          <div>
+            <h3>주작 <span class="tag support">회복 · 보조</span></h3>
+            <div class="role"><b>기본</b> 아군 생명력 20% 회복 · <b>패시브</b> 받는 피해 30 감소</div>
+          </div>
+        </div>
+        <div class="guardian-body">
+          <p>수비형 수호신. 죽어가는 아군을 살리는 회복기로, 초반 지역 돌파는 물론 중·후반 공략에서도
+            액티브 타이밍을 잘 맞추면 캐리를 만들어 냅니다.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>등급</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">2급</td><td>영생의 불꽃이 9초 동안 3초마다 아군 생명력 2% 회복</td></tr>
+                <tr><td class="lv">4급</td><td>5초간 아군이 받는 피해 15% 감소</td></tr>
+                <tr><td class="lv">6급</td><td>영생의 불꽃 회복량 25%로 증가</td></tr>
+                <tr><td class="lv">8급</td><td>생명력이 가장 낮은 아군에게 추가 15% 회복</td></tr>
+                <tr><td class="lv">10급</td><td>3초간 아군이 사망하지 않음</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>계약 〈해탈〉</b> · 회복으로 오버되는 회복량이 보호막으로 변환(중첩 불가).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 백호 -->
+    <section class="block" id="baekho">
+      <div class="guardian">
+        <div class="guardian-head">
+          <img src="assets/img/guardian_baekho.webp" alt="수호신 백호">
+          <div>
+            <h3>백호 <span class="tag dps">공격</span></h3>
+            <div class="role"><b>기본</b> 가장 낮은 적에게 8%+300 피해 · <b>패시브</b> 아군 공격 시 추가 90 피해</div>
+          </div>
+        </div>
+        <div class="guardian-body">
+          <p>공격형. 체력 낮은 적을 치유 전에 끊거나, 체력 높은 탱커를 %피해로 빠르게 깎습니다.
+            고정 수치는 미미하나 적 생명력을 %로 깎는 점, 그리고 4급의 <b>치유 95% 감소</b>가 강력합니다.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>등급</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">2급</td><td>파멸의 강타 +100, 5초간 매초 적 생명력 2% 감소</td></tr>
+                <tr><td class="lv">4급</td><td>강타 +300, 10초간 적이 받는 치유 95% 감소</td></tr>
+                <tr><td class="lv">6급</td><td>강타 +500, 적을 아군 방향으로 끌어당김</td></tr>
+                <tr><td class="lv">8급</td><td>강타 +700, 백호 디버프 제거 불가</td></tr>
+                <tr><td class="lv">10급</td><td>강타 +900, 모든 아군 공격력 25% 증가</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>계약 〈발톱〉</b> · 에너지 소모 최대치가 2로 고정되고 강타 피해 +1000.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 현무 -->
+    <section class="block" id="hyeonmu">
+      <div class="guardian">
+        <div class="guardian-head">
+          <img src="assets/img/guardian_hyeonmu.webp" alt="수호신 현무">
+          <div>
+            <h3>현무 <span class="tag tank">방어 · 반사</span></h3>
+            <div class="role"><b>기본</b> 4초간 받은 피해의 20% 반사 · <b>패시브</b> 3초마다 100 회복</div>
+          </div>
+        </div>
+        <div class="guardian-body">
+          <p>방어형. 다용도는 아니지만 전략 가치가 큽니다. PvP에서 디버프 제거로 상대 기린을 카운터치거나,
+            아군 디버프를 칼같이 지우며 반사딜로 역전을 노립니다. 다만 디버프 제거는 <b>2급 강화 필수</b>.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>등급</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">2급</td><td>거울의 결계가 2초마다 아군 모든 디버프 제거</td></tr>
+                <tr><td class="lv">4급</td><td>지속 동안 아군이 1번 공격받을 때마다 0.3% 체력 회복</td></tr>
+                <tr><td class="lv">6급</td><td>아군이 공격받을 때마다 결계 지속시간 0.2초 증가</td></tr>
+                <tr><td class="lv">8급</td><td>지속 동안 아군 치유 효과 30% 증가</td></tr>
+                <tr><td class="lv">10급</td><td>반사 피해량 25% 증가</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>계약 〈철 뚜껑〉</b> · 반사 결계 지속시간 +1초.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 청룡 -->
+    <section class="block" id="cheongryong">
+      <div class="guardian">
+        <div class="guardian-head">
+          <img src="assets/img/guardian_cheongryong.webp" alt="수호신 청룡">
+          <div>
+            <h3>청룡 <span class="tag dps">공격 보조</span></h3>
+            <div class="role"><b>기본</b> 8초간 아군 공격력·패기 25% 증가 · <b>패시브</b> 아군 공격력 50 증가</div>
+          </div>
+        </div>
+        <div class="guardian-body">
+          <p>전체 아군의 딜을 끌어올리는 보조형 공격 수호신. 미는 덱에서 주로 채용되며, 초반 기린에서
+            청룡으로 갈아타는 경우가 많습니다. 10급이 되면 <b>딜이 곧 힐</b>이 되어 생존력이 크게 보장됩니다.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>등급</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">2급</td><td>지속 동안 아군이 밀쳐지는 거리 20% 감소</td></tr>
+                <tr><td class="lv">4급</td><td>지속 동안 아군 이동속도 20% 증가</td></tr>
+                <tr><td class="lv">6급</td><td>신룡의 가호 효과 35% 상승</td></tr>
+                <tr><td class="lv">8급</td><td>가호 지속시간 35% 증가</td></tr>
+                <tr><td class="lv">10급</td><td>지속 동안 아군이 준 피해의 35%만큼 생명력 회복</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>계약 〈용의 몸〉</b> · 소환 시 에너지 2개 이상 소모하면 원거리 공격력 35%,
+            근접 패기 35% 증가.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기린 -->
+    <section class="block" id="girin">
+      <div class="guardian">
+        <div class="guardian-head">
+          <img src="assets/img/guardian_girin.webp" alt="수호신 기린">
+          <div>
+            <h3>기린 <span class="tag support">디버프 보조</span></h3>
+            <div class="role"><b>기본</b> 적 스킬 5초 봉인 · <b>패시브</b> 적 이동속도·패기 15 감소</div>
+          </div>
+        </div>
+        <div class="guardian-body">
+          <p>초반 유저들의 수호천사. 적 스킬을 묻지도 따지지도 않고 5초 봉인해 공·수 모두에서 우위를 줍니다.
+            범용성이 압도적이라 끝까지 잊혀지지 않지만, <b>신성 룬</b>이나 <b>현무 2급</b>으로 디버프가
+            해제될 수 있다는 점이 약점입니다.</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>등급</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">2급</td><td>고대의 저주 지속 동안 적이 받는 피해 25% 증가</td></tr>
+                <tr><td class="lv">4급</td><td>지속 동안 적 공격력 25% 감소</td></tr>
+                <tr><td class="lv">6급</td><td>지속 동안 적 이동속도 20% 감소</td></tr>
+                <tr><td class="lv">8급</td><td>지속 동안 적 패기 20% 감소</td></tr>
+                <tr><td class="lv">10급</td><td>지속 동안 적이 받는 치유 효과 60% 감소</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>계약 〈붕괴〉</b> · Lv6 이동속도 감소가 45%로 증가하고 Lv6은 제거 불가.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수호신 계약 -->
+    <section class="block" id="contract">
+      <h2>수호신 계약</h2>
+      <p>
+        캐릭터 레벨 <b>55</b>부터 열리는 기능. 수호신의 성능뿐 아니라 주요 기능 자체를 강화합니다.
+        효과가 거의 다 유용해서, 메인으로 쓰는 수호신이라면 사실상 필수 강화입니다.
+        다만 골드와 <b>신성포자</b>를 많이 쏟아부어야 한다는 점이 함정.
+      </p>
+      <figure class="shot">
+        <img src="assets/img/guardian_contract.webp" alt="수호신 계약 화면">
+        <figcaption>수호신 계약 화면. 해탈 · 발톱 · 철 뚜껑 · 용의 몸 · 붕괴 등 수호신별 계약을 강화한다.</figcaption>
+      </figure>
+      <div class="note tip"><b>우선순위.</b> 자신이 가장 자주 쓰는 수호신의 계약부터 강화하세요.
+        주력 한 종을 깊게 키우는 편이 자원 효율이 좋습니다.</div>
+      <p>다음 단계: <a href="rune-gene.html">룬 · 유전자 변이</a>로 몬스터 개별 스탯을 다듬어 보세요.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>슈퍼 진화 스토리 비공식 팬 공략 · 개인 취미용</span>
+      <span>자료 참고: 나무위키 「슈퍼 진화 스토리」 · 이미지 ⓒ 원저작자</span>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

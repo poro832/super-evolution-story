@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신생 세팅 — 슈퍼 진화 스토리</title>
+  <meta name="description" content="슈퍼 진화 스토리 신생 세팅 정리. 신생 티어표, 태초 성능 순위, 근접·원거리 공통 유전자·룬 세팅과 세팅 예외 신생.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">슈퍼 진화 스토리 <span>공략</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">홈</a>
+        <a href="tips.html">종합 공략</a>
+        <a href="deck.html">덱 공략</a>
+        <a href="sinsaeng.html" aria-current="page">신생</a>
+        <a href="guide.html">입문 가이드</a>
+        <a href="guardian.html">수호신</a>
+        <a href="rune-gene.html">룬·유전자</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="kicker">Sinsaeng</span>
+      <h1>신생 세팅</h1>
+      <p class="lead">신생은 재료의 종족 버프를 그대로 물려받는 핵심 전력입니다. 티어와 포지션별
+        공통 세팅, 세팅이 다른 예외 신생, 태초 성능 순위를 정리했습니다.</p>
+      <nav class="toc">
+        <a href="#tier">신생 티어표</a>
+        <a href="#taecho">태초 순위</a>
+        <a href="#setting">공통 세팅</a>
+        <a href="#exception">세팅 예외</a>
+        <a href="#each">개별 신생 세팅</a>
+      </nav>
+    </div>
+
+    <!-- 티어표 -->
+    <section class="block" id="tier">
+      <h2>신생 티어표</h2>
+      <figure class="shot">
+        <img src="assets/img/tier_list.png" alt="신생 티어표 (S/A/B/C/F)" loading="lazy">
+        <figcaption>신생 티어표. 제작: Unknown족장 (^o^)님 · 도움: 낭만부족 이포로님</figcaption>
+      </figure>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>등급</th><th>의미</th></tr></thead>
+          <tbody>
+            <tr><td class="lv">S</td><td>모든 컨텐츠에서 사용 가능</td></tr>
+            <tr><td class="lv">A</td><td>특정 신생 카운터, S티어의 하위호환</td></tr>
+            <tr><td class="lv">B</td><td>특정 상황에서 S~A급</td></tr>
+            <tr><td class="lv">C</td><td>사용은 가능하지만 더 좋은 선택지가 많음</td></tr>
+            <tr><td class="lv">F</td><td>TRASH</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note warn"><b>주의.</b> 망염은 최소 <b>150렙부터</b> 사용 가능 — 저렙 망염 = C.</div>
+    </section>
+
+    <!-- 태초 순위 -->
+    <section class="block" id="taecho">
+      <h2>태초 신생 성능 순위</h2>
+      <p>태초는 초반 스타팅. 추천 순서는 <b>리버스 &gt; 리지 &gt; 카오스</b>이며, 편하게 하려면 <b>리버스</b>.
+        진화체 기준 성능 순위는 다음과 같습니다.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>순위</th><th>신생</th><th>특징</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><b>솔라리아</b></td><td>PVP · PVE 만능. 대체제가 없는 수준의 OP, <b style="color:var(--ember);">강력 추천</b>.</td></tr>
+            <tr><td>2</td><td><b>아이가스</b></td><td>PVP 1티어덱 메인 파츠</td></tr>
+            <tr><td>3</td><td><b>브루엘</b></td><td>초반 스테이지 빠르게 미는 친구</td></tr>
+            <tr><td>4</td><td>루나리아</td><td>—</td></tr>
+            <tr><td>5</td><td>울티머스</td><td>—</td></tr>
+            <tr><td>6</td><td>글람</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 공통 세팅 -->
+    <section class="block" id="setting">
+      <h2>공통 세팅 (유전자 · 룬)</h2>
+      <p>일부 신생을 제외하면 <b>대부분 아래 포지션별 기본 세팅</b>을 따릅니다.</p>
+      <p class="note tip">약어 — <b>지</b>=지속, <b>신</b>=신속, <b>패</b>=패기 / 공=공격</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>포지션</th><th>일반 유전자</th><th>왕유전자</th><th>일반 룬</th><th>특수 룬</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="tag dps">근접</span></td>
+              <td>공격력 −10 / 체력 +120</td>
+              <td>일반룬효과 +10%</td>
+              <td>지지신 / 지지패 / 지패신 / 지지지</td>
+              <td>환생</td>
+            </tr>
+            <tr>
+              <td><span class="tag range">원거리</span></td>
+              <td>공격력 −10 / 체력 +120<br><small>(기본 체력 높거나 피뢰침 역할이면 체력 −30 / 공격력 +40)</small></td>
+              <td>사거리 +15%<small> (사거리 1500까지)</small> · 일반룬효과 +10%</td>
+              <td>공공지 / 공지지 / 공공공</td>
+              <td>폭주 / 야성 / 환생</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <figure class="shot">
+        <img src="assets/img/range_example.png" alt="몬스터 정보의 거리 표기 예시" loading="lazy">
+        <figcaption>사거리는 몬스터 정보(ⓘ)의 '거리' 수치. 예: 솔라리아 거리 1537.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 세팅 예외 -->
+    <section class="block" id="exception">
+      <h2>세팅 예외 신생</h2>
+      <p>아래 신생들은 위 공통 세팅과 다르게 맞춥니다.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>구분</th><th>신생</th><th>메모</th></tr></thead>
+          <tbody>
+            <tr><td><span class="tag dps">근접 예외</span></td><td><b>스크림 · 오페라</b></td><td>기본 근접 세팅과 다름</td></tr>
+            <tr><td><span class="tag range">원거리 예외</span></td><td><b>희전완포 · 스퍼</b></td><td>기본 원거리 세팅과 다름</td></tr>
+            <tr><td>체력 −30 / 공격 +40</td><td><b>솔라 · 반 · 사룡</b></td><td>기본 체력이 높거나 피뢰침 역할로 쓸 때</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><b>레벨업 팁.</b> 스테이크는 아껴두고, 45강 + 왕유변 9개를 <b>EXP +20%</b>로 바꾼 뒤 렙업할 때 사용해야 효율이 납니다.</p>
+    </section>
+
+    <!-- 개별 신생 세팅 -->
+    <section class="block" id="each">
+      <h2>개별 신생 세팅</h2>
+      <p>아래 <b>신생 이미지를 누르면</b> 해당 신생의 상세 세팅과 공략이 창으로 뜹니다.
+        대부분은 위 <a href="#setting">공통 세팅</a>을 따르며, 예외 신생은 별도로 적습니다.</p>
+
+      <div class="sinsaeng-grid">
+        <button class="sinsaeng-card" data-open="m-sper">
+          <img src="assets/img/mon_sper.png" alt="스퍼" loading="lazy">
+          <div class="nm">스퍼</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE S</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-arohiroi">
+          <img src="assets/img/mon_arohiroi.png" alt="아로히로이" loading="lazy">
+          <div class="nm">아로히로이</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE C</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-opera">
+          <img src="assets/img/mon_opera.png" alt="오페라" loading="lazy">
+          <div class="nm">오페라</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE S</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-scream">
+          <img src="assets/img/mon_scream.png" alt="스크림" loading="lazy">
+          <div class="nm">스크림</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP A(준S) · PVE S</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-ninetail">
+          <img src="assets/img/mon_ninetail.png" alt="나인테일" loading="lazy">
+          <div class="nm">나인테일</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE S</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-antares">
+          <img src="assets/img/mon_antares.png" alt="안타레스" loading="lazy">
+          <div class="nm">안타레스</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE S</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-ban">
+          <img src="assets/img/mon_ban.png" alt="반" loading="lazy">
+          <div class="nm">반</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE A</span></div>
+        </button>
+        <button class="sinsaeng-card" data-open="m-huijeon">
+          <img src="assets/img/mon_huijeon.png" alt="희전완포" loading="lazy">
+          <div class="nm">희전완포</div>
+          <div class="badges"><span class="deck-type util" style="font-size:.66rem;padding:2px 8px;">PVP S · PVE A</span></div>
+        </button>
+      </div>
+
+      <!-- 스퍼 상세 모달 -->
+      <dialog id="m-sper" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_sper.png" alt="스퍼">
+          <div>
+            <h3>스퍼</h3>
+            <div class="sub">초·스퍼 · 퓨어탱커 · PVP S · PVE S</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">대체제가 없는, 자리 잡고 지키는 <b>퓨어탱커</b>. 없으면 클리어가 불가능한 던전이 있을 정도의 필수 신생. 체력 몰빵 체력돼지면서 스킬은 상대 최대체력 %로 깎아버린다. 어느 덱에 넣어도 제 역할을 한다.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 소멸</b></td><td>2번째 공격마다 생명력이 가장 높은 두 몬스터의 현재 생명력 10~20% 피해 (피해 감소·방어 무시).</td></tr>
+                <tr><td><b>2스킬 · 소실</b></td><td>소멸 발동 시 5초간 적의 체형 30~60% 감소 (제거 불가).</td></tr>
+                <tr><td><b>3스킬 · 섬광</b></td><td>소실 효과 지속 중 사망 시 몬스터 중심 600~1200 범위의 모든 적 버프 제거.</td></tr>
+                <tr><td><b>4스킬 · 잠금</b></td><td>4초마다 스퍼가 받는 피해는 자기 최대 체력의 20~40%를 초과하지 않는다.</td></tr>
+                <tr><td><b>각성 · 장막</b></td><td>3번 치유받을 때마다 3초간 방어력 10~20%↑. 최대 6중첩, 중첩마다 지속 초기화.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>뽑기 = 완제품 (신의제단 추천)</td></tr>
+                <tr><th>포지션</th><td>퓨어탱커</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>공깎체 (공격력 −10 / 체력 +120)</td></tr>
+                <tr><th>왕유전자</th><td>사거리 5개 / 나머지 일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">반의 자체버프 제거 장판을 벗어나기 위해 사거리 5개를 추천. 덱에 맞춰 조정 가능(5개 권장).</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>지속 / 패기 / 치유 / 환생</td></tr>
+                <tr><td class="lv">2번</td><td>지속 / 지속 / 치유 / 환생</td></tr>
+                <tr><td class="lv">3번</td><td>지속 / 패기 / 치유 / 흡혈</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">각성 스킬을 빠르게 끌어올려야 해 <b>치유룬 필수</b>. 거의 환생, 가끔 흡혈로 생존률을 올린다.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「스퍼」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 아로히로이 상세 모달 -->
+      <dialog id="m-arohiroi" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_arohiroi.png" alt="아로히로이">
+          <div>
+            <h3>아로히로이</h3>
+            <div class="sub">초·아로히로이 · 탱커 / 뒷라인 보호막 · PVP S · PVE C</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">희전완포 등장으로 가치가 급등. <b>아로히 + 희전 조합은 현 PVP 1티어</b>. 반면 PVE에서는 쉽게 녹는 경향.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 신기경</b></td><td>적이 회복한 체력 총합이 아로히로이 최대체력 35% 도달마다 발동. 자기편 최후방에 350 범위 영역 생성, 범위 내 원거리 사거리 8초간 15~30%↑. 발동마다 새로 생성.</td></tr>
+                <tr><td><b>2스킬 · 부상</b></td><td>신기경 영역은 아로히로이 최대체력 10~20%의 체력 보유. 영역 내 몬스터 피해 시 영역 체력이 먼저 감소, 0이면 사라짐.</td></tr>
+                <tr><td><b>3스킬 · 경계</b></td><td>신기경 발동 시 적을 650 밀쳐내고 8초간 받는 피해 15~30%↓, 패기 55%↑.</td></tr>
+                <tr><td><b>4스킬 · 지연</b></td><td>신기경 발동 시 상대 최후방에 350 범위 지연 영역. 적 공속 8초간 12.5~25%↓, 이속 45%↓.</td></tr>
+                <tr><td><b>각성 · 기동</b></td><td>신기경 봉인 불가. 전투 시작 시 바로 발동, 최대체력 25~50% 보호막 획득.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>뽑기 = 완제품 (신의제단 추천)</td></tr>
+                <tr><th>포지션</th><td>탱커 / 뒷라인 보호막</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>공깎체 (공격력 −10 / 체력 +120)</td></tr>
+                <tr><th>왕유전자</th><td>일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">순수 퓨어탱커 포지션 — 체력 극대화.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>지속 / 지속 / 지속 / 환생</td></tr>
+                <tr><td class="lv">2번</td><td>지속 / 지속 / 패기 / 환생</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">이속을 주면 오히려 쉽게 녹아 <b>신속룬조차 주지 않고</b> 체력에 집중.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「아로히로이」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 오페라 상세 모달 -->
+      <dialog id="m-opera" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_opera.png" alt="오페라">
+          <div>
+            <h3>오페라</h3>
+            <div class="sub">초·오페라 · 근접 단일딜러 · PVP S · PVE S</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">단일 개체 중 <b>딜·탱 모든 면에서 우수</b>. 스크림과 거의 무조건 함께 사용되며, 획득도 쉬우면서 강한 신생. (<b>4스킬 의존도가 높음</b>)</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 연무</b></td><td>3번째 공격마다 공격력 150~300% 피해, 4초간 체형 65% 감소.</td></tr>
+                <tr><td><b>2스킬 · 통치</b></td><td>연무 발동 시 주변에 영역 생성. 접근한 적 근접 몬스터 공격력 15~30%↓, 치유효과 35%↓. 오페라 사망 시 사라짐.</td></tr>
+                <tr><td><b>3스킬 · 압도</b></td><td>연무 발동 시 자신보다 체형이 작은 적을 공격하면 스킬을 1~2초 봉인.</td></tr>
+                <tr><td><b>4스킬 · 오만</b></td><td>자신의 치유효과 85%↓ 대신 받는 피해 30~60%↓. (우선)</td></tr>
+                <tr><td><b>각성 · 블러드 이블</b></td><td>통치 영역 안에 적 3마리 이상이면 4초간 공격력 20~40%↑, 연무를 매 1번째 공격마다 발동.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>사냥상점 · 무모한상점 = 조각(추천) / 극한폭주 = 완제품</td></tr>
+                <tr><th>포지션</th><td>근접 단일딜러</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>공깎체 (공격력 −10 / 체력 +120)</td></tr>
+                <tr><th>왕유전자</th><td>체형 UP</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">스킬 특성상 체형을 최대로 키우고 체력을 극대화.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>지속 / 지속 / 신속 / 환생</td></tr>
+                <tr><td class="lv">2번</td><td>지속 / 지속 / 신속 / 폭주</td></tr>
+                <tr><td class="lv">3번</td><td>지속 / 패기 / 신속 / 환생 or 폭주</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>3번</b>은 오페라 <b>미러전용</b>. 상시에는 <b>1번 or 2번</b> 추천.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「오페라」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 스크림 상세 모달 -->
+      <dialog id="m-scream" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_scream.png" alt="스크림">
+          <div>
+            <h3>스크림</h3>
+            <div class="sub">초·스크림 · 근접딜러 / 버퍼 · PVP A(준S) · PVE S</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">오페라·제로·브루엘 등 <b>근접 브루저와 궁합 매우 좋음</b>. 특히 오페라와의 조합이 PVP·PVE 모두 티어를 올린다.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 진동</b></td><td>2번째 공격마다 공격력 200~400% 피해 (봉인 불가).</td></tr>
+                <tr><td><b>2스킬 · 결박</b></td><td>진동은 목표 이동속도를 15초간 40~80% 감소.</td></tr>
+                <tr><td><b>3스킬 · 음율</b></td><td>진동 발동 시 15초간 스크림을 따라가는 영역. 아군 0.5초마다 스크림 공격력 5~10%만큼 체력 회복.</td></tr>
+                <tr><td><b>4스킬 · 열광</b></td><td>스크림 사망 시 공격력 가장 높은 근접 아군에게 15초간 스크림 공격력 60~120% 부여 + 체형 120%↑. 근접 아군 없으면 발동 X, 전투당 1회 (봉인 불가).</td></tr>
+                <tr><td><b>각성 · 망자의 의지</b></td><td>스크림 사망 시 공격력 가장 높은 근접 아군에게 15초간 아군 공격력 400~800% 보호막. 전투당 1회, '열광' 이후 결산.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>비밀상점 · 정글상점 = 조각(추천) / 극한폭주상점 = 조각</td></tr>
+                <tr><th>포지션</th><td>근접딜러 / 버퍼</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>체깎공 (체력 낮추고 공격 강화)</td></tr>
+                <tr><th>왕유전자</th><td>일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">빠르게 터트려 근접딜러에게 버프를 주고 원딜의 폭주룬 발동을 시켜주는 역할. 체력 낮추고 공격 극대화해 빠르게 터트리는 게 목표.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>공격 / 공격 / 신속 / 견고</td></tr>
+                <tr><td class="lv">2번</td><td>공격 / 공격 / 신속 / 환생</td></tr>
+                <tr><td class="lv">3번</td><td>공격 / 공격 / 공격 / 견고</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">견고·환생 두 가지로 나눠 사용. <b>PVP는 견고, PVE는 환생</b> 추천.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「스크림」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 나인테일 상세 모달 -->
+      <dialog id="m-ninetail" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_ninetail.png" alt="나인테일">
+          <div>
+            <h3>나인테일</h3>
+            <div class="sub">초·나인테일 · 원거리 범위딜러 · PVP S · PVE S</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">원딜 <b>TOP 3</b> 중 한 명. 넓은 범위딜로 뒷라인까지 한 방에 보내는 경우가 수두룩한 S급 딜러. 스킬 타이밍이 카라와 겹쳐, 카라덱 상대 시 1·2열에 배치해 타이밍을 꼬기도 한다.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 사혼</b></td><td>매 5번째 공격마다 공격력×150~300% 범위 피해 (봉인 불가).</td></tr>
+                <tr><td><b>2스킬 · 매혹</b></td><td>사혼 발동 시 2~4초 영역 생성, 영역 내 몬스터가 매혹에 이끌림. 이속이 높을수록 빨리 벗어남.</td></tr>
+                <tr><td><b>3스킬 · 진실</b></td><td>공격속도 5~10%↑. 일반공격이 고정피해감소·%피해감소·공방 등 피해감소 효과를 무시.</td></tr>
+                <tr><td><b>4스킬 · 축복</b></td><td>나인테일이 전장에 있으면 아군 근접 몬스터 디버프 지속 15~30% 감소.</td></tr>
+                <tr><td><b>각성 · 환희</b></td><td>나인테일이 전장에 있으면 아군 원거리 몬스터 공격력 10~20%↑.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>비밀상점 · 사냥상점 · 무모한상점 = 조각 (뽑기도 조각으로 나오니 상점에서 천천히 모으는 것 추천)</td></tr>
+                <tr><th>포지션</th><td>원거리 범위딜러</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>공깎체 (공격력 −10 / 체력 +120)</td></tr>
+                <tr><th>왕유전자</th><td>사거리 6개 / 나머지 일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">원거리 딜러도 공격력보다 체력이 중요. 공깎체여도 딜은 준수하며, 상황에 따라 공격을 조금 섞기도.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>공격 / 공격 / 지속 / 폭주</td></tr>
+                <tr><td class="lv">2번</td><td>공격 / 지속 / 지속 / 폭주</td></tr>
+                <tr><td class="lv">3번</td><td>공격 / 공격 / 지속 / 야성</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">유전자로 체력, 룬으로 공/체 조절. <b>폭주·야성 외 선택지 없음</b> — 무조건 딜링.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「나인테일」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 안타레스 상세 모달 -->
+      <dialog id="m-antares" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_antares.png" alt="안타레스">
+          <div>
+            <h3>안타레스</h3>
+            <div class="sub">초·안타레스 · 원거리 범위딜러 / 침묵 · PVP S · PVE S</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">만능 원딜 3인방 중 한 명. <b>무한도전·극한폭주 같은 장기전투에서 최고</b>. 딜 준수 + 자체 회복으로 생존력도 뛰어나고, 상대에게 거는 침묵이 승리에 크게 기여.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 살</b></td><td>3번째 공격마다 공격력 50~100% 범위 피해.</td></tr>
+                <tr><td><b>2스킬 · 광</b></td><td>살 발동 시 10초간 범위 내 근접 아군이 받은 피해량 20~40%가 자신의 생명력 회복으로 전환.</td></tr>
+                <tr><td><b>3스킬 · 암</b></td><td>살 발동 시 2초간 원거리 적의 치유효과 15~30%↓ + 스킬 봉인 (제거 불가).</td></tr>
+                <tr><td><b>4스킬 · 혼</b></td><td>적 사망 시 12초간 적 공격력 125~250%만큼 공격력 증가. 최대 99중첩, 중첩마다 지속 초기화 (최대 안타레스 공격력의 250%).</td></tr>
+                <tr><td><b>각성 · 윤회</b></td><td>체력 75% 이하 시 20초간 공격력 15~30%↑, 0.3초마다 공격력 10%만큼 체력 회복. 매 35초마다 최대 1번.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>뽑기 = 완제품 (신의제단 추천)</td></tr>
+                <tr><th>포지션</th><td>원거리 범위딜러 / 침묵</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>공깎체 (공격력 −10 / 체력 +120)</td></tr>
+                <tr><th>왕유전자</th><td>사거리증가 3개 / 나머지 일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">기본 사거리가 길어 3개 정도만 줘도 충분.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>공격 / 공격 / 지속 / 폭주</td></tr>
+                <tr><td class="lv">2번</td><td>공격 / 지속 / 지속 / 폭주</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">덱 구성·유전자·속성재조합 상태에 따라 지속룬 개수를 조정해 <b>피뢰침 역할</b>로도 사용(자체 회복으로 체력 낮은 적 우선 공격).</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「안타레스」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 반 상세 모달 -->
+      <dialog id="m-ban" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_ban.png" alt="반">
+          <div>
+            <h3>반</h3>
+            <div class="sub">초·반 · 디버퍼 / 원거리 단일딜러 · PVP S · PVE A</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">원딜 TOP 3 중 한 명, 획득도 쉬운 필수 신생. <b>무력화 장판이 반이 죽어도 유지</b>되고, 각성 시 아군 디버프도 모두 해제. 피뢰침 역할로 장판만 깔아도 1인분. <b>3스킬 피해감소 무효화는 적폐 오페라 상대 필수</b> — 오페라 미러전 승패를 가른다.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 파멸</b></td><td>4번째 공격마다 공격력 250% 피해, 6초간 상대 패기 15~30%↓.</td></tr>
+                <tr><td><b>2스킬 · 피면</b></td><td>파멸 발동 시 반이 뒤로 200 밀려나며 최대체력 5~10% 회복.</td></tr>
+                <tr><td><b>3스킬 · 무력화</b></td><td>파멸은 모든 피해감소 효과를 1~2초 무효화. 스킬 제거 불가.</td></tr>
+                <tr><td><b>4스킬 · 영역</b></td><td>전투 시작 시 전장 중앙에 300~600 범위 파멸 영역. 진입한 적은 0.4초마다 지속 가장 긴 버프가 제거됨.</td></tr>
+                <tr><td><b>각성 · 마법 면역</b></td><td>전투 시작 시 아군 4번째 몬스터 위치에 200~400 범위 마법면역 영역. 진입한 아군은 0.4초마다 지속 가장 긴 디버프가 제거됨.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>자유의친구 = 수정 (행동력 15,000 소모만 해도 무료 획득)</td></tr>
+                <tr><th>포지션</th><td>디버퍼 / 원거리 단일딜러</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>체력 (진형 내 다른 원딜보다 낮게)</td></tr>
+                <tr><th>왕유전자</th><td>사거리 1개 / 나머지 일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">다른 원딜 대신 맞아주는 피뢰침이라, 진형 내 다른 원딜보다만 낮은 정도로 체력 조절.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>공격 / 공격 / 공격 / 환생</td></tr>
+                <tr><td class="lv">2번</td><td>공격 / 공격 / 지속 / 환생</td></tr>
+                <tr><td class="lv">3번</td><td>공격 / 공격 / 공격 / 폭주</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">스크림·뫼비 등 폭주를 터트리는 덱이면 폭주, 아니면 환생. 타 원딜과 체력을 비교해 공·지 룬 선택.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「반」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <!-- 희전완포 상세 모달 -->
+      <dialog id="m-huijeon" class="sinsaeng-modal">
+        <div class="modal-head">
+          <img src="assets/img/mon_huijeon.png" alt="희전완포">
+          <div>
+            <h3>희전완포</h3>
+            <div class="sub">초·희전완포 · 원거리 단일딜러 / 아군탱커 기생 · PVP S · PVE A</div>
+          </div>
+          <button class="modal-close" data-close aria-label="닫기">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="note">가장 최근에 나온 신생. 부착한 탱커가 죽을 때까지 죽지 않아 생존력이 매우 뛰어나고, 동시에 모든 능력치를 공격력에 몰아줘 딜링도 준수. <b>현 PVP 1티어덱 메인딜러</b>.</p>
+
+          <h4>스킬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>스킬</th><th>효과</th></tr></thead>
+              <tbody>
+                <tr><td><b>1스킬 · 영체</b></td><td>전투 시작 시 아군 체력 가장 높은 근접 몬스터와 연결. 그 몬스터는 영체 상태로 희전완포 대신 피해받고 패기 50~100%↑.</td></tr>
+                <tr><td><b>2스킬 · 지원</b></td><td>영체 몬스터는 0.5초마다 일반공격에 희전완포 공격력 50~100% 추가 피해.</td></tr>
+                <tr><td><b>3스킬 · 협방</b></td><td>적이 죽음에 달하는 피해를 받으면 연결된 몬스터가 자기 최대생명력 25~50% 보호막 획득 (쿨 3초).</td></tr>
+                <tr><td><b>4스킬 · 고동</b></td><td>희전완포 일반공격은 2초마다 연결된 몬스터 최대생명력 5~10% 추가 피해.</td></tr>
+                <tr><td><b>각성 · 보충</b></td><td>영체 몬스터가 보호막 보유 중이면 패기 75~150%↑, 넉백이 고정 넉백으로 전환.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>획득 · 포지션</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">획득</th><td>뽑기 = 완제품 (신의제단 추천)</td></tr>
+                <tr><th>포지션</th><td>원거리 단일딜러 / 아군탱커 기생</td></tr>
+                <tr><th>추천 덱</th><td>덱 추천 게시판 참고</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>세팅 — 유전자</h4>
+          <div class="table-scroll">
+            <table>
+              <tbody>
+                <tr><th style="width:110px;">일반유전</th><td>체깎공 (체력 낮추고 공격 강화)</td></tr>
+                <tr><th>왕유전자</th><td>일룬 10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note tip">스킬 특성상 모든 능력치를 공격력에 몰빵.</p>
+
+          <h4>세팅 — 룬</h4>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>세팅</th><th>구성</th></tr></thead>
+              <tbody>
+                <tr><td class="lv">1번</td><td>공격 / 공격 / 공격 / 야성</td></tr>
+                <tr><td class="lv">2번</td><td>공격 / 공격 / 신속 / 야성</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">거의 모든 상황에서 <b>1번 룬 세팅</b>으로 마무리 가능. 2번(신속)은 공명을 맞추고 싶은데 공룬이 없을 때 정도 — <b>1번 추천</b>.</p>
+
+          <p class="rec" style="color:var(--ink-mut);font-size:.85rem;">출처: 슈진스 카페 몬스터 가이드 「희전완포」 (작성: 루트비 매니저)</p>
+        </div>
+      </dialog>
+
+      <p class="note tip" style="margin-top:18px;">다른 신생 자료(이미지 + 세팅)를 주시면 그리드에 카드를 계속 추가하겠습니다.</p>
+    </section>
+
+    <div class="note" style="margin-top:36px;">
+      <b>출처.</b> 슈진스 네이버 카페 자료(신생 티어표·세팅 가이드)를 개인 취미용 팬 공략으로 재구성했습니다.
+      티어·평가는 작성 시점 기준이며 패치에 따라 달라질 수 있습니다.
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>슈퍼 진화 스토리 비공식 팬 공략 · 개인 취미용</span>
+      <span>자료 참고: 슈진스 네이버 카페 · 나무위키 「슈퍼 진화 스토리」</span>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# 카페 원본 PDF (데이터 추출 완료, 배포 제외)
+assets/img/*.pdf
+# OS/에디터
+Thumbs.db
+.DS_Store
