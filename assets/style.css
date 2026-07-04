@@ -431,6 +431,29 @@ dialog.sinsaeng-modal::backdrop { background: rgba(0,0,0,.62); backdrop-filter: 
   font-family: var(--head); font-weight: 800; font-size: 1.05rem; margin: 20px 0 6px;
 }
 
+/* ---------- 계산기 ---------- */
+.calc {
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 20px 22px; margin-top: 18px; box-shadow: var(--shadow);
+}
+.calc h3 { margin-top: 0; }
+.calc-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; margin: 14px 0 18px; }
+.calc-field { display: flex; flex-direction: column; gap: 5px; }
+.calc-field label { font-size: .84rem; color: var(--ink-soft); font-weight: 700; }
+.calc-field input {
+  width: 120px; padding: 9px 11px; border-radius: 9px;
+  border: 1px solid var(--line); background: var(--bg-2); color: var(--ink);
+  font-size: 1rem; font-family: var(--body);
+}
+.calc-field input:focus { outline: 2px solid var(--amber); border-color: var(--amber); }
+.calc-result { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); }
+.calc-out { background: var(--panel-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 16px; }
+.calc-out .k { font-size: .82rem; color: var(--ink-mut); }
+.calc-out .v { font-family: var(--head); font-weight: 800; font-size: 1.45rem; color: var(--gold); margin-top: 3px; line-height: 1.2; }
+.calc-out .v small { font-size: .82rem; color: var(--ink-soft); font-weight: 400; }
+.calc-note { margin-top: 12px; color: var(--ink-mut); font-size: .85rem; }
+.calc-err { color: var(--ember); font-weight: 700; }
+
 /* ---------- 접기/펼치기 ---------- */
 .accordion { margin: 14px 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .accordion + .accordion { margin-top: 10px; }

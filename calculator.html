@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소모량 계산기 — 슈퍼 진화 스토리</title>
+  <meta name="description" content="슈퍼 진화 스토리 소모량 계산기. 강화 골드·강화포자, 식량(경험치) 소모량을 레벨 구간으로 계산.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">슈퍼 진화 스토리 <span>공략</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">홈</a>
+        <a href="tips.html">종합 공략</a>
+        <a href="deck.html">덱 공략</a>
+        <a href="sinsaeng.html">신생</a>
+        <a href="guide.html">입문 가이드</a>
+        <a href="calculator.html" aria-current="page">계산기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="kicker">Calculator</span>
+      <h1>소모량 계산기</h1>
+      <p class="lead">강화(골드·강화포자)와 식량(경험치) 소모량을 레벨 구간으로 계산합니다.
+        표는 아래 원본 자료를 근거로 합니다.</p>
+      <nav class="toc">
+        <a href="#enh">강화 계산기</a>
+        <a href="#food">식량 계산기</a>
+        <a href="#tables">원본 표</a>
+      </nav>
+    </div>
+
+    <!-- 강화 계산기 -->
+    <section class="block" id="enh">
+      <h2>강화 계산기 (골드 · 강화포자)</h2>
+      <p>몬스터 <b>강화 단계</b>는 0 → 45. 현재 단계에서 목표 단계까지 필요한 골드와 강화포자를 계산합니다.</p>
+      <div class="calc">
+        <div class="calc-row">
+          <div class="calc-field"><label for="enh-cur">현재 강화 (0~44)</label><input id="enh-cur" type="number" min="0" max="44" value="0"></div>
+          <div class="calc-field"><label for="enh-tgt">목표 강화 (1~45)</label><input id="enh-tgt" type="number" min="1" max="45" value="45"></div>
+          <div class="calc-field"><label for="enh-cnt">몬스터 수</label><input id="enh-cnt" type="number" min="1" max="999" value="1"></div>
+        </div>
+        <div class="calc-result" id="enh-out"></div>
+        <p class="calc-note">※ 강화 골드·강화포자 소모량 표(0→45) 기준.</p>
+      </div>
+    </section>
+
+    <!-- 식량 계산기 -->
+    <section class="block" id="food">
+      <h2>식량 계산기 (경험치)</h2>
+      <p>몬스터 <b>레벨</b>은 1 → 100. 목표 레벨까지 필요한 경험치와 식량 개수를 계산합니다.
+        (배추 <b>25</b> · 양고기 <b>250</b> · 스테이크 <b>1,250</b> exp)</p>
+      <div class="calc">
+        <div class="calc-row">
+          <div class="calc-field"><label for="food-cur">현재 레벨 (1~99)</label><input id="food-cur" type="number" min="1" max="99" value="1"></div>
+          <div class="calc-field"><label for="food-tgt">목표 레벨 (2~100)</label><input id="food-tgt" type="number" min="2" max="100" value="100"></div>
+          <div class="calc-field"><label for="food-cnt">몬스터 수</label><input id="food-cnt" type="number" min="1" max="999" value="1"></div>
+        </div>
+        <div class="calc-result" id="food-out"></div>
+        <p class="calc-note">※ 식량 개수는 해당 식량만 사용할 경우 기준(올림). 슈진스 1~100 레벨 필요경험치 표 기준.</p>
+      </div>
+    </section>
+
+    <!-- 원본 표 -->
+    <section class="block" id="tables">
+      <h2>원본 소모량 표</h2>
+      <figure class="shot">
+        <img src="assets/img/cost_gold.png" alt="강화 시 골드 소모량 표" loading="lazy">
+        <figcaption>강화 시 골드 소모량 (0 → 45)</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/img/cost_spore.png" alt="강화포자 소모량 표" loading="lazy">
+        <figcaption>강화포자 소모량 (0 → 45)</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/img/cost_food.png" alt="레벨별 필요 식량(경험치) 표" loading="lazy">
+        <figcaption>레벨별 필요 경험치 / 필요 식량 (1 → 100)</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>슈퍼 진화 스토리 비공식 팬 공략 · 개인 취미용</span>
+      <span>자료 참고: 슈진스 카페 소모량 표 · 나무위키 「슈퍼 진화 스토리」</span>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    "use strict";
+    // 강화 단계별 필요 골드 (0→1 ... 44→45)
+    var GOLD = [3500,7000,14000,21000,35000,42000,52500,63000,77000,87500,98000,105000,119000,126000,133000,147000,157500,168000,182000,189000,203000,210000,224000,231000,238000,252000,262500,273000,287000,297500,997500,1102500,1207500,1312500,1417500,1732500,2047500,2362500,2677500,2992500,3307500,3622500,3937500,4252500,4817500];
+    // 강화 단계별 필요 강화포자
+    var SPORE = [1,2,4,6,10,12,15,18,22,25,28,30,34,36,38,42,45,48,52,54,58,60,64,66,68,72,75,78,82,85,95,105,115,125,135,165,195,225,255,285,315,345,375,405,435];
+    // 레벨별 누적 경험치 (index 0 = Lv1 = 0)
+    var FOOD = [0,25,50,75,100,125,150,175,200,225,450,905,1388,1901,2446,3025,3639,4290,4980,5711,6486,7306,8173,9092,10062,11088,12367,13706,15109,16578,18116,20264,22513,24867,27331,29911,32710,35634,38688,41879,42019,47937,54085,60471,67107,74000,84744,95906,107504,119553,132071,145676,159786,174420,189597,205338,221663,238593,256150,274357,293237,320538,348801,378059,408347,439699,472154,505747,540518,576507,613753,652700,692991,734668,777779,822369,868487,916181,965503,1016504,1082421,1161763,1243794,1328597,1416259,1506868,1600514,1697291,1797294,1900622,2007374,2119655,2235568,2355224,2478732,2606207,2737766,2873527,3013614,3158750];
+
+    var fmt = function (n) { return n.toLocaleString('ko-KR'); };
+    function box(k, v, unit) {
+      return '<div class="calc-out"><div class="k">' + k + '</div><div class="v">' + v + (unit ? ' <small>' + unit + '</small>' : '') + '</div></div>';
+    }
+    function err(el, msg) { el.innerHTML = '<div class="calc-out"><div class="calc-err">' + msg + '</div></div>'; }
+
+    function calcEnh() {
+      var out = document.getElementById('enh-out');
+      var c = parseInt(document.getElementById('enh-cur').value, 10);
+      var t = parseInt(document.getElementById('enh-tgt').value, 10);
+      var n = parseInt(document.getElementById('enh-cnt').value, 10) || 1;
+      if (isNaN(c) || isNaN(t)) { out.innerHTML = ''; return; }
+      if (c < 0 || t > 45 || t <= c) { err(out, '현재 < 목표, 0~45 범위로 입력하세요.'); return; }
+      var gold = 0, spore = 0, i;
+      for (i = c; i < t; i++) { gold += GOLD[i]; spore += SPORE[i]; }
+      gold *= n; spore *= n;
+      out.innerHTML =
+        box('필요 골드', fmt(gold)) +
+        box('필요 강화포자', fmt(spore), '개') +
+        box('구간', '+' + c + ' → +' + t, (n > 1 ? '× ' + n + '마리' : ''));
+    }
+
+    function calcFood() {
+      var out = document.getElementById('food-out');
+      var c = parseInt(document.getElementById('food-cur').value, 10);
+      var t = parseInt(document.getElementById('food-tgt').value, 10);
+      var n = parseInt(document.getElementById('food-cnt').value, 10) || 1;
+      if (isNaN(c) || isNaN(t)) { out.innerHTML = ''; return; }
+      if (c < 1 || t > 100 || t <= c) { err(out, '현재 < 목표, 1~100 범위로 입력하세요.'); return; }
+      var exp = (FOOD[t - 1] - FOOD[c - 1]) * n;
+      var steak = Math.ceil(exp / 1250);
+      var mutton = Math.ceil(exp / 250);
+      var cabbage = Math.ceil(exp / 25);
+      out.innerHTML =
+        box('필요 경험치', fmt(exp)) +
+        box('스테이크', fmt(steak), '개 (1,250)') +
+        box('양고기', fmt(mutton), '개 (250)') +
+        box('배추', fmt(cabbage), '개 (25)');
+    }
+
+    ['enh-cur', 'enh-tgt', 'enh-cnt'].forEach(function (id) {
+      document.getElementById(id).addEventListener('input', calcEnh);
+    });
+    ['food-cur', 'food-tgt', 'food-cnt'].forEach(function (id) {
+      document.getElementById(id).addEventListener('input', calcFood);
+    });
+    calcEnh(); calcFood();
+  })();
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
